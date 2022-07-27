@@ -62,35 +62,35 @@
        
           - application.yaml 예시
             ```
-spring:
-  profiles: default
-  cloud:
-    gateway:
-      routes:
-        - id: room
-          uri: http://localhost:8081
-          predicates:
-            - Path=/rooms/**, /reviews/** 
-        - id: payment
-          uri: http://localhost:8082
-          predicates:
-            - Path=/payments/** 
-        - id: reservation
-          uri: http://localhost:8083
-          predicates:
-            - Path=/reservations/** 
-        - id: Message
-          uri: http://localhost:8084
-          predicates:
-            - Path=/messages/** 
-        - id: viewpage
-          uri: http://localhost:8085
-          predicates:
-            - Path= /roomviews/**
-        - id: frontend
-          uri: http://localhost:8080
-          predicates:
-            - Path=/**
+		spring:
+		  profiles: default
+		  cloud:
+		    gateway:
+		      routes:
+			- id: room
+			  uri: http://localhost:8081
+			  predicates:
+			    - Path=/rooms/**, /reviews/** 
+			- id: payment
+			  uri: http://localhost:8082
+			  predicates:
+			    - Path=/payments/** 
+			- id: reservation
+			  uri: http://localhost:8083
+			  predicates:
+			    - Path=/reservations/** 
+			- id: Message
+			  uri: http://localhost:8084
+			  predicates:
+			    - Path=/messages/** 
+			- id: viewpage
+			  uri: http://localhost:8085
+			  predicates:
+			    - Path= /roomviews/**
+			- id: frontend
+			  uri: http://localhost:8080
+			  predicates:
+			    - Path=/**
 	    
             ```
 
