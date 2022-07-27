@@ -22,9 +22,11 @@
 - Table 모델링 (ROOMVIEW)
 
 - viewpage MSA ViewHandler 를 통해 구현 ("RoomRegistered" 이벤트 발생 시, Pub/Sub 기반으로 별도 Roomview 테이블에 저장)
+
 ![image](https://user-images.githubusercontent.com/37835544/181169708-77fa4897-7f56-4731-94a9-c3f5a0be3905.png)
 
 - Event별로 Table 데이터 변경
+
 ![image](https://user-images.githubusercontent.com/37835544/181169941-100c3f8d-b7ec-40a4-808a-d1b6b33fb5d8.png)
 
 
@@ -145,10 +147,10 @@ public interface PaymentService {
 ```
 
 
-# 결제 (payment) 서비스 중단 시 결과
+- 결제 (payment) 서비스 중단 시 결과
 
 ![image](https://user-images.githubusercontent.com/37835544/181162844-f2ec96d1-2ab0-48f3-97f5-9a6c962e240b.png)
 
-# 결제 서비스 실행 후 결과
+- 결제 서비스 실행 후 결과
 
 ![image](https://user-images.githubusercontent.com/37835544/181163106-417a5721-55c6-4347-b454-8583fe66bb5e.png)
