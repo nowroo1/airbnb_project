@@ -106,22 +106,27 @@ PolicyHandler에서 처리 시 어떤 건에 대한 처리인지를 구별하기
 
 
 예약 전 - 방 상태(status = true)
+
 ![image](https://user-images.githubusercontent.com/37835544/181166258-2c4b0d4e-0d5a-44ec-87eb-4ef4551bf410.png)
 
 
 예약 후 - 방 상태(status = false)
+
 ![image](https://user-images.githubusercontent.com/37835544/181166377-340c6fe8-0c62-49ef-abc9-92c0d19b576b.png)
 
 
 예약 후 - 결제 상태(payments/1 존재)
+
 ![image](https://user-images.githubusercontent.com/37835544/181166457-c2a9ee2f-13de-4137-83b3-f193b1ac267f.png)
 
 
 예약 취소 - 방 상태(status = true)
+
 ![image](https://user-images.githubusercontent.com/37835544/181167738-7e592ddd-62f2-42c7-bae3-488c23cae1e2.png)
 
 
 예약 취소 - 결제 상태(payment 삭제)
+
 ![image](https://user-images.githubusercontent.com/37835544/181166867-88016341-0ed6-43f4-8ef2-ffb8bb3ba062.png)
 
 
