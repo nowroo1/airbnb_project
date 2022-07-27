@@ -130,14 +130,8 @@ Airbnb 프로젝트에서는 PolicyHandler에서 처리 시 어떤 건에 대한
 
 ReservationAccepted 시 approvePayment 호출은 Req/Res 방식을 이용하였고, FeignClient 를 이용하여 처리하였다.
 
-- 룸, 결제 서비스를 호출하기 위하여 Stub과 (FeignClient) 를 이용하여 Service 대행 인터페이스 (Proxy) 를 구현 
-
 ```
 # PaymentService.java
-
-package airbnb.external;
-
-<import문 생략>
 
 @FeignClient(name = "payment", url = "${api.url.payment}")
 public interface PaymentService {
@@ -173,14 +167,12 @@ public interface PaymentService {
     }
 ```
 
-- 동기식 호출에서는 호출 시간에 따른 타임 커플링이 발생하며, 결제 시스템이 장애가 나면 주문도 못받는다는 것을 확인:
 
-
-```
 # 결제 (payment) 서비스 중단 시 결과
 
 ![image](https://user-images.githubusercontent.com/37835544/181162844-f2ec96d1-2ab0-48f3-97f5-9a6c962e240b.png)
 
 # 결제 서비스 실행 후 결과
+
 ![image](https://user-images.githubusercontent.com/37835544/181163106-417a5721-55c6-4347-b454-8583fe66bb5e.png)
 
