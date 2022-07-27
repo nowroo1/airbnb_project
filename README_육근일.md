@@ -100,23 +100,26 @@
 PolicyHandler에서 처리 시 어떤 건에 대한 처리인지를 구별하기 위한 Correlation-key 구현을 
 이벤트 클래스 안의 변수로 전달받아 서비스간 연관된 처리를 정확하게 구현하고 있습니다. 
 
-아래의 구현 예제를 보면
-
 예약(Reservation)을 하면 동시에 연관된 방(Room), 결제(Payment) 등의 서비스의 상태가 적당하게 변경이 되고,
 예약건의 취소를 수행하면 다시 연관된 방(Room), 결제(Payment) 등의 서비스의 상태값 등의 데이터가 적당한 상태로 변경되는 것을
 확인할 수 있습니다.
 
+
 예약 전 - 방 상태(status = true)
 ![image](https://user-images.githubusercontent.com/37835544/181166258-2c4b0d4e-0d5a-44ec-87eb-4ef4551bf410.png)
+
 
 예약 후 - 방 상태(status = false)
 ![image](https://user-images.githubusercontent.com/37835544/181166377-340c6fe8-0c62-49ef-abc9-92c0d19b576b.png)
 
+
 예약 후 - 결제 상태(payments/1 존재)
 ![image](https://user-images.githubusercontent.com/37835544/181166457-c2a9ee2f-13de-4137-83b3-f193b1ac267f.png)
 
+
 예약 취소 - 방 상태(status = true)
 ![image](https://user-images.githubusercontent.com/37835544/181167738-7e592ddd-62f2-42c7-bae3-488c23cae1e2.png)
+
 
 예약 취소 - 결제 상태(payment 삭제)
 ![image](https://user-images.githubusercontent.com/37835544/181166867-88016341-0ed6-43f4-8ef2-ffb8bb3ba062.png)
