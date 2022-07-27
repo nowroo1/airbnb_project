@@ -175,4 +175,5 @@ public interface PaymentService {
 # 결제 서비스 실행 후 결과
 
 ![image](https://user-images.githubusercontent.com/37835544/181163106-417a5721-55c6-4347-b454-8583fe66bb5e.png)
+![image](https://user-images.githubusercontent.com/37835544/181163794-72a71099-fea0-4254-8564-8c653b2b27af.png)
 
