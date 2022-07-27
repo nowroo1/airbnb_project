@@ -58,7 +58,7 @@
 
 
 ## Gateway
-      1. gateway 스프링부트 App을 추가 후 application.yaml내에 각 마이크로 서비스의 routes 를 추가하고 각 서버의 URI 
+      1. gateway 스프링부트 App을 추가 후 application.yaml내에 각 마이크로 서비스의 routes 를 추가하고 각 서버의 URI 작성
        
           - application.yaml 예시
             ```
